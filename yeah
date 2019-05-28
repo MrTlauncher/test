@@ -1,0 +1,8 @@
+script_name('Autologin')
+script_author('akionka')
+script_version('1.7.2')
+script_version_number(11)
+
+
+local sampev   = require 'lib.samp.events'
+end // проверка обновы
