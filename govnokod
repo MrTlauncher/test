@@ -1,0 +1,33 @@
+
+
+local sampev = require 'lib.samp.events'
+
+
+
+
+function main ()
+if not isSampLoaded() or not isSampfuncsLoaded() then return end
+ while not isSampAvailable() do wait(100) end
+ sampAddChatMessage ('хуйня активейтед')
+ sampRegisterChatCommand ('pov', pov)
+  while true do wait(0)
+  id = tonumber (params)
+
+  end
+end
+
+function pov (params)
+
+if not params then return end
+if not id then
+sampAddChatMessage ('неверна')
+return end
+if id >999 then
+sampAddChatMessage ('ты чо няма такого')
+return end
+if id <999 or id =999 then
+
+function sampev.onServerMessage(color, text)
+if text:match('['..id']') then wait(1000) sampSendChat (text)
+end
+end
